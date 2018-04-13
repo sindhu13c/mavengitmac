@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.opera.*;
 
 public class Module extends ReUsableMethods{
 
@@ -20,6 +21,7 @@ public class Module extends ReUsableMethods{
 		System.out.println("Firefox browser is launched..");
 		*/
 		
+		/*
 		String cur_dir = System.getProperty("user.dir");
 		String driverPath = cur_dir + "/src/test/java/utility/chromedriver";
 		
@@ -32,6 +34,23 @@ public class Module extends ReUsableMethods{
 		
 		
 		System.out.println("Chrome browser is launched..");
+		*/
+		
+		/*
+		 * opera
+		 */
+		
+		String cur_dir = System.getProperty("user.dir");
+		String driverPath = cur_dir + "/src/test/java/utility/operadriver";
+		
+		//String driverPath="/Users/sindhu/Documents/testingjarfiles/chromedriver";
+		System.setProperty("webdriver.opera.driver", driverPath);
+		
+		driver=new OperaDriver();
+		
+	
+		System.out.println("Chrome browser is launched..");
+		
 	}
 	public static void loginTo_Salesforce(String userName,String passWord)
 	{
