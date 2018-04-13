@@ -25,7 +25,6 @@ public class Module extends ReUsableMethods{
 		String cur_dir = System.getProperty("user.dir");
 		String driverPath = cur_dir + "/src/test/java/utility/chromedriver";
 		
-		//String driverPath="/Users/sindhu/Documents/testingjarfiles/chromedriver";
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		
 		driver=new ChromeDriver();
